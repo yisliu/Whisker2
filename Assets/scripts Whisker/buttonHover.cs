@@ -30,7 +30,11 @@ public class buttonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         tween?.Kill();
         tween = transform.DOScale(scaleBy*initScale, duration).SetEase(Ease.OutBack);
-        newAudio?.Play();
+        //newAudio?.Play();
+        if (newAudio != null)
+        {
+            newAudio.Play();
+        }
     }
 
     public void OnPointerExit(PointerEventData pointerData)
@@ -38,7 +42,11 @@ public class buttonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         tween?.Kill();
         tween = transform.DOScale(initScale, duration).SetEase(Ease.OutBack);
         //newAudio.SetActive(false);
-        newAudio?.Stop();
+        //newAudio?.Stop();
+        if (newAudio != null)
+        {
+            newAudio.Stop();
+        }
     }
 
     void OnDestroy()

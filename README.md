@@ -6,15 +6,16 @@ This is a cozy baking game where you play as a cat baker. You need to serve vari
 
 ## About
 
-Whisker is 2.5D Unity game where you play as a 2D character in a 3D environment. You need to take orders and create pastries by putting ingridients in the big dough pot in the middle of the kitchen.
+Whisker is 2.5D Unity game where you can play as a Cat baker serving pastries to your animal friends. You need to take orders and create pastries by putting ingridients in the big dough pot in the middle of the kitchen.
 
 ## Status
 
-This is still a work in progress!
+This is the version 2 of Whisker which is a solo project to improve and add more content to Whisker's! =
 
 ## Built With
 
 - Unity 3D
+- DOTween
 
 ## Documents
 

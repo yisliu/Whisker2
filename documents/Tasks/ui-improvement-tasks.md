@@ -1,9 +1,15 @@
-7/26/2026
-Deadline: 7/27/2026
+8/10/2026
+Deadline: 8/12/2026
 
-Goals: Finish the game for demonstration next week
-	- [ ] P1. Complete the rest of the levels as in the other four levels
-	- [ ] P1. Commit and merge the branch to main on Github
-	- [ ] P2. Add in the sound for the level such as cooking, etc.
-	- [ ] P3. Adjust the background and environment
-	- [ ] P4. Maybe: Add in the additional artwork 
+Goals: Adjust and fix previous UI to make it look more professional
+	- [	] P1. Change the font for Whisker's for better readability
+	- [x] P2. Delete the drop here, pickup, and word instructions and 
+	- [x] P3. Add in highlights or UI panels for better tutorial
+	- [x] P4. Create start, end, pause buttons for every level
+	- [x] P5. Create start, end, pause panels prefabs for levels
+	- [x] P6. Create settings button and panel
+	- [ ] P7. Create windows and web build for whisker for greater playability
+	- [x] P8. Fix README and DESIGN document for Whisker2 -> update them
+
+
+
