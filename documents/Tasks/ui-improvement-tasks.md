@@ -2,7 +2,7 @@
 Deadline: 8/12/2026
 
 Goals: Adjust and fix previous UI to make it look more professional
-	- [	] P1. Change the font for Whisker's for better readability
+	- [x] P1. Change the font for Whisker's for better readability(not necessary)
 	- [x] P2. Delete the drop here, pickup, and word instructions and 
 	- [x] P3. Add in highlights or UI panels for better tutorial
 	- [x] P4. Create start, end, pause buttons for every level
