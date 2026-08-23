@@ -613,11 +613,11 @@ public class PlayerMovementFixed : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
     private float cameraPitch = 0f;
-    private Throwable heldObject;
+    //private Throwable heldObject;
     private float throwLockTimer;
 
-    public bool IsJumping => !isGrounded;
-    public Throwable HeldObject => heldObject;
+    //public bool IsJumping => !isGrounded;
+    //public Throwable HeldObject => heldObject;
 
     [SerializeField] private Animator spriteAnimator;
 
@@ -643,6 +643,7 @@ public class PlayerMovementFixed : MonoBehaviour
 
     void Update()
     {
+        //applianceInteraction.InputConsumed = false;
         bool controllerGrounded = controller.isGrounded;
         bool sphereGrounded = false;
 
@@ -703,7 +704,7 @@ public class PlayerMovementFixed : MonoBehaviour
         controller.Move(move * currentSpeed * Time.deltaTime);
 
         // Jump — blocked while holding an object so left-click throw doesn't also jump
-        if (Input.GetButtonDown("Jump") && isGrounded && heldObject == null)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             PlayJumpEffect();
@@ -714,6 +715,7 @@ public class PlayerMovementFixed : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         // Pickup
+        /*
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (heldObject != null)
@@ -756,10 +758,59 @@ public class PlayerMovementFixed : MonoBehaviour
                 {
                     Debug.Log("[Pickup] Nothing to pick up.");
                 }
+                
+            }
+
+            TryPickupLooseItem();
+        }
+        */
+
+        /*if (Input.GetKeyDown(KeyCode.E) && !applianceInteraction.InputConsumed)
+        {
+            GameObject activeItem = InventorySystem.Instance.GetActiveItem();
+            if (activeItem != null)
+            {
+                InventorySystem.Instance.TakeActiveItem();
+                activeItem.SetActive(true);
+                activeItem.transform.SetParent(null);
+                Destroy(activeItem);
+            }
+            else
+            {
+                TryPickupLooseItem();
+            }
+        }*/
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            GameObject activeItem = InventorySystem.Instance.TakeActiveItem();
+            if (activeItem != null)
+            {
+                activeItem.transform.SetParent(null);
+                activeItem.transform.position = transform.position + transform.forward * 0.6f;
+                activeItem.SetActive(true);
+                Throwable throwable = activeItem.GetComponent<Throwable>();
+                if (throwable != null)
+                {
+                    throwable.Drop();
+                }
+                else
+                {
+                    Rigidbody rb2 = activeItem.GetComponent<Rigidbody>();
+                    if (rb2 != null)
+                    {
+                        rb2.isKinematic = false;
+                    }
+                    Collider col2 = activeItem.GetComponent<Collider>();
+                    if (col2 != null)
+                    {
+                        col2.enabled = true;
+                    }
+                }
             }
         }
 
         // Throw toward mouse cursor
+        /*
         if (Input.GetMouseButtonDown(0) && heldObject != null)
         {
             Camera cam = null;
@@ -782,6 +833,33 @@ public class PlayerMovementFixed : MonoBehaviour
             heldObject.Throw(direction, throwSpeed, throwLoft);
             heldObject = null;
             throwLockTimer = ThrowMoveLockDuration;
+        }
+        */
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject activeItem = InventorySystem.Instance.GetActiveItem();
+            if (activeItem != null)
+            {
+                Throwable throwable = activeItem.GetComponent<Throwable>();
+                if (throwable != null)
+                {
+                    Camera cam = playerCamera != null ? playerCamera.GetComponent<Camera>() : null;
+                    if (cam == null)
+                    {
+                        cam = Camera.main;
+                    }
+
+                    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                    Vector3 direction = Physics.Raycast(ray, out RaycastHit hit, 200f)
+                        ? (hit.point - holdPoint.position).normalized
+                        : ray.direction;
+                    InventorySystem.Instance.TakeActiveItem();
+                    activeItem.SetActive(true);
+                    activeItem.transform.SetParent(null);
+                    throwable.Throw(direction, throwSpeed, throwLoft);
+                    throwLockTimer = ThrowMoveLockDuration;
+                }
+            }
         }
         UpdateAnimation();
     }
@@ -818,5 +896,51 @@ public class PlayerMovementFixed : MonoBehaviour
         spriteAnimator.SetBool("isMoving", rawX != 0f || rawZ != 0f);
         spriteAnimator.SetBool("isGrounded", isGrounded);
 
+    }
+
+    void TryPickupLooseItem()
+    {
+        if (InventorySystem.Instance.IsFull())
+        {
+            return;
+        }
+
+        Transform cam = playerCamera != null ? playerCamera : transform;
+        Throwable found = null;
+
+        if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hit, pickupRadius))
+        {
+            found = hit.collider.GetComponentInParent<Throwable>();
+        }
+
+        if (found == null)
+        {
+            Collider[] nearby = Physics.OverlapSphere(transform.position, pickupRadius, ~0, QueryTriggerInteraction.Collide);
+            foreach (var col in nearby)
+            {
+                Throwable t = col.GetComponentInParent<Throwable>();
+                if (t != null)
+                {
+                    found = t;
+                    break;
+                }
+            }
+        }
+
+        if (found != null)
+        {
+            found.PickUp(InventorySystem.Instance.holdPoint);
+            InventorySystem.Instance.AddItem(found.gameObject);
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && !applianceInteraction.InputConsumed)
+        {
+            TryPickupLooseItem();
+        }
+
+        //applianceInteraction.InputConsumed = false;
     }
 }

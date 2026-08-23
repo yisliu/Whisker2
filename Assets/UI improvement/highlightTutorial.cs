@@ -18,11 +18,11 @@ public class highlightTutorial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (step == 0 && player.HeldObject != null)
+        if (step == 0 && InventorySystem.Instance.GetActiveItem() != null)
         {
             AdvanceTo(1);
         }
-        else if (step == 1 && player.HeldObject == null && WasThrown())
+        else if (step == 1 && InventorySystem.Instance.GetActiveItem() == null && WasThrown())
         {
             AdvanceTo(2);
         }
@@ -49,8 +49,8 @@ public class highlightTutorial : MonoBehaviour
 
     bool WasThrown()
     {
-        bool thrown = wasThrown && player.HeldObject == null;
-        wasThrown = player.HeldObject != null;
+        bool thrown = wasThrown && InventorySystem.Instance.GetActiveItem() == null;
+        wasThrown = InventorySystem.Instance.GetActiveItem() != null;
         return thrown;
     }
 }

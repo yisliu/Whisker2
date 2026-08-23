@@ -3726,131 +3726,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1188189364}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &868416745
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -34.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174661164814509730, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3868158640184661683, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: deliveryRadius
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4412751344916376984, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 690477507, guid: fbfa0ddeb6d7c4b13b9dde93b3ef9024, type: 3}
-    - target: {fileID: 4565954161359661896, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a7163f1adaec74d21b1d4ab1988e2418, type: 2}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'badLines.Array.data[0]'
-      value: "Finn: This tastes a bit off\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'badLines.Array.data[1]'
-      value: "Finn: but you can always come over to my bakery to try my recipes,
-        they\u2019re perfection! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: greetingLines.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: thankYouLines.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[0]'
-      value: " Finn: hm i see\u2026 this is the person stealing my customers\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[1]'
-      value: 'Coco: huh? what do you mean! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[2]'
-      value: " Finn: im joking haha! im Finn, the owner of the cafe across the street.
-        you\u2019ve definitely heard of my delicious blueberry pies, right? "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[3]'
-      value: "Finn: i heard your pastries were delicious so i came to see if it\u2019s
-        worth the hype. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[4]'
-      value: "Finn: let\u2019s see, i wanna try a croissant! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[5]'
-      value: "\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[6]'
-      value: 'What are you waiting for? Head to the kitchen! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'greetingLines.Array.data[7]'
-      value: "By the way, whenever  you\u2019re unsure about how to make the pastry,
-        just check the order receipt on my head!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940754308817466825, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: 'thankYouLines.Array.data[0]'
-      value: "Finn: This is yummy\u2026 I wonder if my customers will come here instead\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 9157975155196360858, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
-      propertyPath: m_Name
-      value: customer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9b8c6251de2b1456197b30b5e1e341c6, type: 3}
 --- !u!1 &873685594
 GameObject:
   m_ObjectHideFlags: 0
@@ -8668,6 +8543,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138742865}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &7166871997372958329
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4095858558600090783, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_Name
+      value: customer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684257174131270051, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8689,7 +8621,7 @@ SceneRoots:
   - {fileID: 622240329}
   - {fileID: 1188189364}
   - {fileID: 2056783189}
-  - {fileID: 868416745}
+  - {fileID: 7166871997372958329}
   - {fileID: 1659162416}
   - {fileID: 1751748704}
   - {fileID: 187356417}

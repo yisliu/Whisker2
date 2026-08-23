@@ -285,7 +285,7 @@ TextureImporter:
         width: 81
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,6 +294,28 @@ TextureImporter:
       bones: []
       spriteID: feae8cf03a97f441cb955a567e7e5f69
       internalID: 391681131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_sprite_transparent_whisker_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 233
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 11, y: 12, z: 10, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63a3093db1264c58b995ffcae80221f
+      internalID: -1869924603
       vertices: []
       indices: 
       edges: []
@@ -320,6 +342,7 @@ TextureImporter:
       ui_sprite_transparent_whisker_5: 1709056439
       ui_sprite_transparent_whisker_6: 1308498964
       ui_sprite_transparent_whisker_7: 391681131
+      ui_sprite_transparent_whisker_8: -1869924603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
