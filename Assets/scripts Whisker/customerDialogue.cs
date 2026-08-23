@@ -14,8 +14,13 @@ public class customerDialogue : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
-        gameObject.SetActive(false);
+        textComponent.transform.parent.gameObject.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -37,6 +42,10 @@ public class customerDialogue : MonoBehaviour
 
     public void StartDialogue(string[] lines)
     {
+        if (lines == null || lines.Length == 0)
+        {
+            return;
+        }
         StopAllCoroutines();
         currentLines = lines;
         index = 0;

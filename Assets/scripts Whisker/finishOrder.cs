@@ -2,92 +2,77 @@ using UnityEngine;
 
 public class finishOrder : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [Header("Customer")]
-    public string itemTag = "bread";
-	public float deliveryRadius = 2f;
+    [Header("Order")] 
+    public string itemTag;
+    public string beverageTag;
+    public Sprite foodSprite;
+    public Sprite beverageSprite;
+    public float tipAmount = 10f;
 
     private void OnMouseDown()
     {
         foodDelivered();
     }
 
-    // Update is called once per frame
-    /*public void foodDelivered()
-    {*/
-/*
-        GameObject heldF = GameObject.FindWithTag(itemTag);
-        if (heldF == null)
+    private void Update()
+    {
+        // Fallback Raycast: Detect direct clicks on the customer or delivery box
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("No food");
-        }
-        else
-        {
-            Debug.Log("Food Delivered");
-			ScoreManager.Instance?.AddPoints(1000);
-            Destroy(heldF);
-            Destroy(gameObject);
-        }
-        //Destroy(gameObject);
-*/
-        /*GameObject heldF = GameObject.FindWithTag(itemTag);
-        if (heldF == null)
-        {
-            Debug.Log("No food");
-			ScoreManager.Instance?.AddPoints(-1000);
+            if (Camera.main == null) return;
 
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.transform == null) return;
+
+                // Compare root objects safely to verify the click landed on this customer or their children
+                bool isTargetHit = hit.transform == transform || hit.transform.root == transform.root;
+
+                if (isTargetHit)
+                {
+                    foodDelivered();
+                }
+            }
         }
-        else
-        {
-            Debug.Log("Food Delivered");
-			ScoreManager.Instance?.AddPoints(1000);
-            Destroy(heldF);
-			GetComponentInParent<customerAI>()?.CompleteOrder();
-			Destroy(gameObject);
-        }
-	*/
-/*
-		GameObject heldF = null;
-		Collider[] nearbyColliders = Physics.OverlapSphere(transform.position, deliveryRadius); 
-		foreach (Collider collider in nearbyColliders){
-			if(collider.tag == itemTag){
-				heldF = collider.gameObject;
-				break;
-			}
-		}
-		if(heldF != null){
-			Debug.Log("Food Delivered");
-			ScoreManager.Instance?.AddPoints(1000);
-            Destroy(heldF);
-			GetComponentInParent<customerAI>()?.CompleteOrder();
-			Destroy(gameObject);
-		}
-		else{
-			Debug.Log("No food");
-			ScoreManager.Instance?.AddPoints(-1000);
-		}
     }
 
-*/
     public void foodDelivered()
     {
-		PlayerMovementFixed player = FindObjectOfType<PlayerMovementFixed>();
-		if (player == null || player.HeldObject == null)
-		{
-			GetComponentInParent<customerAI>()?.TriggerGreeting();
-		}
-		else if (!player.HeldObject.CompareTag(itemTag))
-		{
-			Debug.Log("Bad kitty!");
-			GetComponentInParent<customerAI>()?.WrongOrder();
-		}
-		else
-		{
-			Debug.Log("Food Delivered");
-			//ScoreManager.Instance?.AddPoints(1000);
-			Destroy(player.HeldObject.gameObject);
-			GetComponentInParent<customerAI>()?.CompleteOrder();
-			Destroy(gameObject);
-		}
+        customerAI ai = GetComponentInParent<customerAI>();
+        if (ai == null) return;
+
+        GameObject food = InventorySystem.Instance?.FindItemByTag(itemTag);
+
+        if (food == null)
+        {
+            Debug.LogWarning($"[finishOrder] Player clicked '{gameObject.name}' but missing required item tag: '{itemTag}'.");
+            ai.TriggerGreeting();
+            return;
+        }
+
+        if (!string.IsNullOrEmpty(beverageTag))
+        {
+            GameObject beverage = InventorySystem.Instance.FindItemByTag(beverageTag);
+            if (beverage == null)
+            {
+                Debug.LogWarning($"[finishOrder] Player missing required beverage tag: '{beverageTag}'.");
+                ai.TriggerGreeting();
+                return;
+            }
+            InventorySystem.Instance.RemoveItem(beverage);
+            Destroy(beverage);
+        }
+
+        // Successfully hand over food
+        InventorySystem.Instance.RemoveItem(food);
+        Destroy(food);
+        MoneyManager.Instance?.AddMoney(tipAmount);
+
+        // Complete customer order
+        ai.CompleteOrder();
+
+        // Disable this script instead of destroying the GameObject
+        this.enabled = false;
     }
 }

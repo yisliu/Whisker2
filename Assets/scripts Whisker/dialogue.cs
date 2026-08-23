@@ -1,45 +1,60 @@
-
-
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 
 public class dialogue : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public TextMeshProUGUI textComponent;
     public string[] lines;
-    public float textSpeed;
+    public float textSpeed = 0.05f;
+    [Tooltip("How many seconds dialogue stays on screen after finishing typing before closing automatically.")]
+    public float autoCloseDelay = 3f;
+
     private int index;
-    
-    void Start()
+    private Coroutine typingCoroutine;
+    private Coroutine autoCloseCoroutine;
+
+    void OnEnable()
     {
-        textComponent.text = string.Empty;
-        startDialogue();
+        // Automatically start dialogue when this GameObject becomes active
+        if (lines != null && lines.Length > 0)
+        {
+            startDialogue();
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (textComponent.text == lines[index])
+            // If still typing, complete current line instantly
+            if (typingCoroutine != null)
             {
-                nextLine();
+                StopCoroutine(typingCoroutine);
+                typingCoroutine = null;
+                textComponent.text = lines[index];
+                
+                // Reset auto-close timer after skipping typing
+                StartAutoCloseTimer();
             }
+            // If done typing, move to next line
             else
             {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
+                nextLine();
             }
         }
     }
 
-    void startDialogue()
+    public void startDialogue()
     {
+        // Cancel all active typing/closing routines before starting fresh
+        StopAllCoroutines();
+        
         index = 0;
-        StartCoroutine(typeLine());
+        textComponent.text = string.Empty;
+        gameObject.SetActive(true);
+        
+        typingCoroutine = StartCoroutine(typeLine());
     }
 
     IEnumerator typeLine()
@@ -49,20 +64,43 @@ public class dialogue : MonoBehaviour
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+
+        typingCoroutine = null;
+        StartAutoCloseTimer();
     }
 
     void nextLine()
     {
+        if (autoCloseCoroutine != null) StopCoroutine(autoCloseCoroutine);
+
         if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
-            StartCoroutine(typeLine());
+            typingCoroutine = StartCoroutine(typeLine());
         }
         else
         {
-            gameObject.SetActive(false);
+            CloseDialogue();
         }
     }
-}
 
+    private void StartAutoCloseTimer()
+    {
+        if (autoCloseCoroutine != null) StopCoroutine(autoCloseCoroutine);
+        autoCloseCoroutine = StartCoroutine(AutoCloseRoutine());
+    }
+
+    IEnumerator AutoCloseRoutine()
+    {
+        yield return new WaitForSeconds(autoCloseDelay);
+        CloseDialogue();
+    }
+
+    public void CloseDialogue()
+    {
+        StopAllCoroutines();
+        textComponent.text = string.Empty;
+        gameObject.SetActive(false);
+    }
+}
