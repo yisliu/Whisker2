@@ -984,7 +984,7 @@ MonoBehaviour:
   orderNote: {fileID: 374544235261456287}
   foodSprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
   beverageSprite: {fileID: 0}
-  timer: 1000
+  timer: 100
   orderPromptCanvas: {fileID: 3867314388999019097}
   timerCanvas: {fileID: 2934151007273768774}
   timerFillImage: {fileID: 9180361155726177230}
