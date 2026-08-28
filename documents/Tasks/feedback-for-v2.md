@@ -19,15 +19,14 @@ Suggestment:
 	11. Add in different themings and environment for each level for freshness and more engagement.
 
 Goals:  Fix and adjust first version of V2 of Whisker based on 
-	- [ ] P1.The game doesn't flow well because of bugs that prevent the gaxme from flowing.
-	- [ ] P1.Add in open and close animations for frigdes, cabinent, and stove.
-	- [ ] P1.Add in timer animation for stove.
-	- [ ] P1.Allow for door function for door.
+	- [x] P1.The game doesn't flow well because of bugs that prevent the game from flowing.
+	- [x] P1.Add in open and close animations for frigdes, cabinent, and stove.
+	- [x] P1.Add in timer animation for stove.
+	- [x] P1.Allow for door function for door.
 	- [ ] P1.Fix-up the UI such as the timer to look more like it is a timer.
-	- [ ] P2.Fix-up the UI such as the timer to look more like it is a timer.
-	- [ ] P2.The layout of the game is confusing and blocks certain important details.
+	- [x] P2.The layout of the game is confusing and blocks certain important details.
 	- [ ] P2.Allow for more 3D details to mesh with environment.
 	- [ ] P2.Allow for more animations and effects for stove.
-	- [ ] P3.Reverse the kitchen layout for better clarity and to reduce empty space
-	- [ ] P3.Remove the random things on the walls which show their 2Dness too much which prevents cohesiveness with the rest of the environment.
+	- [x] P3.Reverse the kitchen layout for better clarity and to reduce empty space
+	- [x] P3.Remove the random things on the walls which show their 2Dness too much which prevents cohesiveness with the rest of the environment.
 	- [ ] P3.Add in different themings and environment for each level for freshness and more engagement.
