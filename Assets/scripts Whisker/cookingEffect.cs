@@ -2,25 +2,35 @@ using UnityEngine;
 
 public class cookingEffect : MonoBehaviour
 {
-    [Header("Prefab Input")]
+    [Header("Prefab Input")] 
     public GameObject objectA;
     public GameObject objectB;
-
-    [Header("Prefab Output")]
+    [Header("Prefab Output")] 
     public GameObject objectR;
 
     public Transform spawnPoint;
+    [Header("Oven")] 
+    public ovenManager oven;
 
+    public float burnTime = 6f;
     private GameObject currentA = null;
-
     private GameObject currentB = null;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool isCooking = false;
+    private bool isCooked = false;
+    private float burnTimer = 0f;
+
     private void OnTriggerEnter(Collider other)
     {
+        if (isCooking || isCooked)
+        {
+            return;
+        }
+
         if (other.gameObject.CompareTag(objectA.tag) && currentA == null)
         {
             currentA = other.gameObject;
         }
+
         else if (other.gameObject.CompareTag(objectB.tag) && currentB == null)
         {
             currentB = other.gameObject;
@@ -28,30 +38,53 @@ public class cookingEffect : MonoBehaviour
 
         if (currentA != null && currentB != null)
         {
-            cookedItem();
+            StartCooking();
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void Update()
     {
-        if(other.gameObject == currentA)
+        if (isCooking)
         {
-            //currentA = null;
+            
         }
 
-        if (other.gameObject == currentB)
+        if (isCooked)
         {
-            //currentB = null;
+            burnTimer += Time.deltaTime;
+            if (burnTimer >= burnTime)
+            {
+                Burn();
+            }
         }
+        
     }
 
-    private void cookedItem()
+    private void StartCooking()
     {
+        isCooking = true;
         Destroy(currentA);
         Destroy(currentB);
         currentA = null;
         currentB = null;
-        Vector3 spawnP = spawnPoint != null ? spawnPoint.position : transform.position;
+        oven.StartCooking();
+        Invoke(nameof(FinishCooking), oven.cookTime);
+    }
+
+    private void FinishCooking()
+    {
+        isCooking = false;
+        isCooked = true;
+        burnTimer = 0f;
+        Vector3 spawnP = spawnPoint != null?spawnPoint.position:transform.position;
         Instantiate(objectR, spawnP, Quaternion.identity);
+        oven.OnCookingComplete();
+    }
+
+    private void Burn()
+    {
+        isCooked = false;
+        burnTimer = 0f;
+        oven.OnBurn();
     }
 }

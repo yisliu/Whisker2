@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 0.98
   intensity:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1.15
   scatter:
     m_OverrideState: 1
     m_Value: 0.45
@@ -59,10 +59,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
   m_Name: ChannelMixer
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   redOutRedIn:
-    m_OverrideState: 0
-    m_Value: 100
+    m_OverrideState: 1
+    m_Value: 95
   redOutGreenIn:
     m_OverrideState: 0
     m_Value: 0
@@ -70,14 +70,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   greenOutRedIn:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 4.6
   greenOutGreenIn:
-    m_OverrideState: 0
-    m_Value: 100
+    m_OverrideState: 1
+    m_Value: 93.2
   greenOutBlueIn:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 17.14
   blueOutRedIn:
     m_OverrideState: 0
     m_Value: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   blueOutBlueIn:
-    m_OverrideState: 0
-    m_Value: 100
+    m_OverrideState: 1
+    m_Value: 115.2
 --- !u!114 &-3357603926938260329
 MonoBehaviour:
   m_ObjectHideFlags: 3

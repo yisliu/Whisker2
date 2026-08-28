@@ -62,7 +62,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "7a69895a2b434d479726323f09bae48e"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -1067,6 +1071,26 @@
             "m_Id": "0e5d1289b0524cf8b0c86d376f74a427"
         }
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "7a69895a2b434d479726323f09bae48e",
+    "m_Title": "Code:",
+    "m_Content": "strawberrySpriteRenderer.material.SetFloat(\"_staturationMulitplier\", floatValue);",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 69.5,
+        "y": -464.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
