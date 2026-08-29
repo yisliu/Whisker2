@@ -431,8 +431,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -524,7 +524,6 @@ GameObject:
   - component: {fileID: 7423926038368773837}
   - component: {fileID: 2220250391298933753}
   - component: {fileID: 8266364917614940044}
-  - component: {fileID: 1428010985447542180}
   - component: {fileID: 5820504656874061662}
   - component: {fileID: 4591219492015192690}
   - component: {fileID: 1018822911320884494}
@@ -627,23 +626,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9495487, y: 1.5321578, z: 9.23837}
   m_Center: {x: 0.027798653, y: -0.074746564, z: 3.7866256}
---- !u!114 &1428010985447542180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3619568599816573578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: Honey_Pie
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 691023ada7d114581bfdaaddaaa47434, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!114 &5820504656874061662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,6 +688,8 @@ MonoBehaviour:
   badLines:
   - "Mila: hm, i don\u2019t think i ordered this\u2026 practice a bit more and it\u2019ll
     be perfect! "
+  customerName: Mila
+  customerPortrait: {fileID: 21300000, guid: 96e51c6a697f34c108ac0dc684f9ac60, type: 3}
 --- !u!95 &4591219492015192690
 Animator:
   serializedVersion: 7
@@ -1114,8 +1098,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1195,6 +1179,7 @@ GameObject:
   - component: {fileID: 7498462980344535412}
   - component: {fileID: 3373550493657298787}
   - component: {fileID: 4752270419972625527}
+  - component: {fileID: 1032863871409230252}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1234,10 +1219,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 7.3059044, y: 8.198636, z: 6.969873}
+  m_Center: {x: 0.7980698, y: -3.5993164, z: -2.9849358}
 --- !u!212 &3373550493657298787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1305,6 +1290,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1032863871409230252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739873977192230290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: Honey_Pie
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: 691023ada7d114581bfdaaddaaa47434, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &6889601930787876778
 GameObject:
   m_ObjectHideFlags: 0

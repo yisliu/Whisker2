@@ -84,6 +84,8 @@ public class dialogueChoices : MonoBehaviour
     [SerializeField] private GameObject choicePanel;
     [SerializeField] private string nextScene;
     [SerializeField] private string[] triggerLines;
+    [SerializeField] private string speakerName;
+    [SerializeField] private Sprite speakerPortrait;
 
     void Awake()
     {
@@ -96,7 +98,7 @@ public class dialogueChoices : MonoBehaviour
         if (customerDialogue.Instance != null && triggerLines.Length > 0)
         {
             customerDialogue.Instance.onDialogueComplete = () => choicePanel.SetActive(true);
-            customerDialogue.Instance.StartDialogue(triggerLines);
+            customerDialogue.Instance.StartDialogue(triggerLines, speakerName, speakerPortrait);
         }
     }
 
@@ -106,7 +108,7 @@ public class dialogueChoices : MonoBehaviour
         if (customerDialogue.Instance != null)
         {
             customerDialogue.Instance.onDialogueComplete = () => SceneManager.LoadScene(nextScene);
-            customerDialogue.Instance.StartDialogue(responseLines);
+            customerDialogue.Instance.StartDialogue(responseLines, speakerName, speakerPortrait);
         }
         else
         {

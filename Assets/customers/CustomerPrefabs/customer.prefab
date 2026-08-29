@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6875027079789670211}
   - component: {fileID: 580868919570429145}
   - component: {fileID: 8895934502863125142}
+  - component: {fileID: 2215645803486900005}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -139,10 +140,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.8294497, y: 7.8821254, z: 7.330425}
+  m_Center: {x: 0.68953085, y: -3.4410617, z: 3.1652124}
 --- !u!212 &580868919570429145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -210,6 +211,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2215645803486900005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888588542742419429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: lemon_roll
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: 6fd81966778e343eb9e3d50822c09cb5, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &934559856917074628
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +240,6 @@ GameObject:
   - component: {fileID: 4658361334106705873}
   - component: {fileID: 997642011984560131}
   - component: {fileID: 2847648878082819191}
-  - component: {fileID: 6921266419822267321}
   - component: {fileID: 7912938800389709595}
   - component: {fileID: 2061582874895741914}
   - component: {fileID: 8763201901649357243}
@@ -325,23 +342,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7769245, y: 1.5321578, z: 4.9919715}
   m_Center: {x: 0.04207802, y: -0.074746564, z: 1.7736133}
---- !u!114 &6921266419822267321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934559856917074628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: lemon_roll
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 6fd81966778e343eb9e3d50822c09cb5, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!114 &7912938800389709595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +408,8 @@ MonoBehaviour:
   badLines:
   - 'Charlie: this smells a bit funky...'
   - "Charlie: but i\u2019ll still eat it i guess\u2026 "
+  customerName: Charlie
+  customerPortrait: {fileID: 21300000, guid: 688ced43f5beb42d6af109b0c06d2233, type: 3}
 --- !u!95 &2061582874895741914
 Animator:
   serializedVersion: 7
@@ -1232,8 +1234,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -19,6 +19,9 @@ public class ovenManager : MonoBehaviour
     private bool playerInRange;
     private bool isCooking;
     private float timer;
+    
+    [Header("Effects")]
+    public ParticleSystem smokeEffect;
 
     void Start()
     {
@@ -65,6 +68,10 @@ public class ovenManager : MonoBehaviour
 
     public void StartCooking()
     {
+        if (smokeEffect != null)
+        {
+            smokeEffect.Play();
+        }
         isCooking = true;
         timer = cookTime;
         timerCanvas.SetActive(true);
@@ -74,6 +81,10 @@ public class ovenManager : MonoBehaviour
 
     public void OnCookingComplete()
     {
+        if (smokeEffect != null)
+        {
+            smokeEffect.Stop();
+        }
         isCooking = false;
         timerCanvas.SetActive(false);
         cookTimerFill.fillAmount = 1f;
@@ -82,6 +93,10 @@ public class ovenManager : MonoBehaviour
 
     public void OnBurn()
     {
+        if (smokeEffect != null)
+        {
+            smokeEffect.Stop();
+        }
         isCooking = false;
         timerCanvas.SetActive(false);
         cookTimerFill.fillAmount = 1f;

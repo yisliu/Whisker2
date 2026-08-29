@@ -550,8 +550,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -847,7 +847,6 @@ GameObject:
   - component: {fileID: 4908475905426821408}
   - component: {fileID: 8757969792363834810}
   - component: {fileID: 7826454368877851882}
-  - component: {fileID: 1628956141231425262}
   - component: {fileID: 6765691253277924587}
   - component: {fileID: 935304533407241411}
   - component: {fileID: 374544235261456287}
@@ -950,23 +949,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5805603, y: 1.5321578, z: 5.9184127}
   m_Center: {x: 0.022397136, y: -0.074746564, z: 1.9692872}
---- !u!114 &1628956141231425262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5734305821459728176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: baguette2
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!114 &6765691253277924587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,6 +1033,8 @@ MonoBehaviour:
   - "Nana: This doesn\u2019t taste quite right\u2026"
   - "But it\u2019s alright! Practice a bit more and you\u2019ll be ready for the
     picnic!  "
+  customerName: Nana
+  customerPortrait: {fileID: 21300000, guid: eb02794a3a41a4aedab5b049bef14f76, type: 3}
 --- !u!95 &935304533407241411
 Animator:
   serializedVersion: 7
@@ -1310,6 +1294,7 @@ GameObject:
   - component: {fileID: 1767072076939661282}
   - component: {fileID: 4015100017628278327}
   - component: {fileID: 5143742876765898485}
+  - component: {fileID: 1176387951327554453}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1349,10 +1334,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.248056, y: 8.032764, z: 6.5011077}
+  m_Center: {x: 0.9918465, y: -3.5163815, z: 2.7505538}
 --- !u!212 &4015100017628278327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1420,6 +1405,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1176387951327554453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469775588750407978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: baguette2
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &7827065959505262763
 GameObject:
   m_ObjectHideFlags: 0

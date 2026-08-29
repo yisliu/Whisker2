@@ -33,6 +33,8 @@ public class customerAI : MonoBehaviour
     [SerializeField] private string[] greetingLines;
     [SerializeField] private string[] thankYouLines;
     [SerializeField] private string[] badLines;
+    [SerializeField] private string customerName;
+    [SerializeField] private Sprite customerPortrait;
 
     private NavMeshAgent agent;
     private float wTimer;
@@ -274,7 +276,7 @@ public class customerAI : MonoBehaviour
         }
 
         orderNote?.HideOrder();
-        customerDialogue.Instance?.StartDialogue(thankYouLines);
+        customerDialogue.Instance?.StartDialogue(thankYouLines, customerName, customerPortrait);
         PlayEffect(happyP);
         StartLeaving();
     }
@@ -284,7 +286,7 @@ public class customerAI : MonoBehaviour
         if (state != State.Leaving)
         {
             Debug.Log($"<color=cyan>[CustomerAI]</color> Triggering greeting dialogue for '{gameObject.name}'.");
-            customerDialogue.Instance?.StartDialogue(greetingLines);
+            customerDialogue.Instance?.StartDialogue(greetingLines,  customerName, customerPortrait);
         }
     }
 
@@ -346,7 +348,7 @@ public class customerAI : MonoBehaviour
 
         Debug.LogWarning($"[CustomerAI] Wrong order delivered to '{gameObject.name}'!");
         MoneyManager.Instance?.DeductMoney(5f);
-        customerDialogue.Instance?.StartDialogue(badLines);
+        customerDialogue.Instance?.StartDialogue(badLines,  customerName, customerPortrait);
     }
 
     public void SetPoints(Transform servicePoint, Transform exitPoint)

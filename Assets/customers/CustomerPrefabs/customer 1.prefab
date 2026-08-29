@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4541781351063517662}
   - component: {fileID: 6889498763003146376}
   - component: {fileID: 8322290974110538932}
+  - component: {fileID: 8033203597992325960}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -51,10 +52,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.565288, y: 7.2905765, z: 5.7957063}
+  m_Center: {x: -0.6523321, y: -3.1452882, z: 2.3978524}
 --- !u!212 &6889498763003146376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -122,6 +123,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8033203597992325960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985408636114050850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: Crossiant
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: c3ea9aba448aa4234b838612d7e05c5a, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &1240745067780189775
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +552,6 @@ GameObject:
   - component: {fileID: 1123300265630040098}
   - component: {fileID: 436144086755841447}
   - component: {fileID: 5209059345739065563}
-  - component: {fileID: 2423437354330336209}
   - component: {fileID: 741677161467966608}
   - component: {fileID: 5504609489237736532}
   - component: {fileID: 5285317681294654048}
@@ -637,23 +654,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1077523, y: 1.5321578, z: 6.338473}
   m_Center: {x: -0.0032585145, y: -0.074746564, z: 2.2698276}
---- !u!114 &2423437354330336209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4095858558600090783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: Crossiant
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: c3ea9aba448aa4234b838612d7e05c5a, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!114 &741677161467966608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,6 +722,8 @@ MonoBehaviour:
   - "Finn: This tastes a bit off\u2026 "
   - "Finn: but you can always come over to my bakery to try my recipes, they\u2019re
     perfection! "
+  customerName: Finn
+  customerPortrait: {fileID: 21300000, guid: 899886a7bf17f466d93637a97205566e, type: 3}
 --- !u!95 &5504609489237736532
 Animator:
   serializedVersion: 7
@@ -1004,8 +1006,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

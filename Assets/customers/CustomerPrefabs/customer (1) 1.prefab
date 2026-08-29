@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 4234360668196150355}
   - component: {fileID: 5939657860103120108}
   - component: {fileID: 570681044573107912}
+  - component: {fileID: 1438188252703336965}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -225,10 +226,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.6765475, y: 10.201715, z: 11.026821}
+  m_Center: {x: 0.6844269, y: -4.6008577, z: 5.0134106}
 --- !u!212 &5939657860103120108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -296,6 +297,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1438188252703336965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482680445807051751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: Carrot
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: 1315c9c6efcd44418a53fc57d3c2a49d, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &3509976276870952089
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +592,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press [Space] to Take Order
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
-  m_sharedMaterial: {fileID: 6188143611461169483, guid: 7750485d7e3c74f6da9b91b0529f6c58, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1353,7 +1371,6 @@ GameObject:
   - component: {fileID: 3529338309926787680}
   - component: {fileID: 8693534666695999421}
   - component: {fileID: 8626960473201345626}
-  - component: {fileID: 1579997735264508422}
   - component: {fileID: 1417550850108871303}
   - component: {fileID: 2910686695917790656}
   - component: {fileID: 479505081237268524}
@@ -1456,23 +1473,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.420296, y: 1.5321578, z: 9.52881}
   m_Center: {x: -0.63164043, y: -0.074746564, z: 4.1734447}
---- !u!114 &1579997735264508422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9089864589465552639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: Carrot
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 1315c9c6efcd44418a53fc57d3c2a49d, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!114 &1417550850108871303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1543,6 +1543,8 @@ MonoBehaviour:
   - "Willow: but it\u2019s okay! i\u2019ll come back tomorrow so perfect the recipe
     by then."
   - 'Willow: See ya!'
+  customerName: Willow
+  customerPortrait: {fileID: 21300000, guid: c05ce1ff2d9c1407fae8333cdc121834, type: 3}
 --- !u!95 &2910686695917790656
 Animator:
   serializedVersion: 7
