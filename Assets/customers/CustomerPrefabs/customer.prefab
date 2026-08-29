@@ -142,8 +142,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.8294497, y: 7.8821254, z: 7.330425}
-  m_Center: {x: 0.68953085, y: -3.4410617, z: 3.1652124}
+  m_Size: {x: 6.8294497, y: 7.8821254, z: 13.530426}
+  m_Center: {x: 0.68953097, y: -3.4410617, z: 0.06521187}
 --- !u!212 &580868919570429145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -396,20 +396,23 @@ MonoBehaviour:
   happyP: {fileID: 0}
   sadP: {fileID: 0}
   anim: {fileID: 2061582874895741914}
-  greetingLines:
-  - "Coco: Hello, who\u2019s there??? "
-  - 'Charlie: Can I get a lemon roll?? '
-  - 'Coco: Can I get a name for the order? '
-  - 'Charlie: I''m Charlie.  '
-  - 'Charlie: Hurry up, I''m in a time crunch. '
+  customerName: Charlie
+  customerPortrait: {fileID: 21300000, guid: 688ced43f5beb42d6af109b0c06d2233, type: 3}
+  greetingsLines:
+  - "Hello, who\u2019s there??? "
+  - 'Can I get a lemon roll?? '
+  - 'Can I get a name for the order? '
+  - 'I''m Charlie.  '
+  - 'Hurry up, I''m in a time crunch. '
+  greetingsIsPlayer: 0100010000
   thankYouLines:
   - 'Charlie: oh this is kinda good.'
   - 'Charlie: I''ll come again sometime. '
+  thankYouIsPlayer: 0000
   badLines:
   - 'Charlie: this smells a bit funky...'
   - "Charlie: but i\u2019ll still eat it i guess\u2026 "
-  customerName: Charlie
-  customerPortrait: {fileID: 21300000, guid: 688ced43f5beb42d6af109b0c06d2233, type: 3}
+  badIsPlayer: 0000
 --- !u!95 &2061582874895741914
 Animator:
   serializedVersion: 7
@@ -689,7 +692,7 @@ RectTransform:
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1271597817773185498}
+  - {fileID: 1350849733873199716}
   m_Father: {fileID: 718842914865226660}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1104,17 +1107,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6523287437237769577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1271597817773185498}
+  m_Children:
+  - {fileID: 1271597817773185498}
+  m_Father: {fileID: 2626985985028417859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3448, y: 0.00012207}
-  m_SizeDelta: {x: 102.6895, y: 3.4668}
+  m_AnchoredPosition: {x: 1.6372738, y: -33.83913}
+  m_SizeDelta: {x: 26.6895, y: 26.4668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7236343458939421168
 CanvasRenderer:
@@ -1144,7 +1148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e004363ab04c405f920ec3e9f7354fb, type: 3}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1427,18 +1431,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7052786240628518537}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1350849733873199716}
-  m_Father: {fileID: 2626985985028417859}
+  m_Children: []
+  m_Father: {fileID: 1350849733873199716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -39.006996}
-  m_SizeDelta: {x: 100, y: 3.4665}
+  m_AnchoredPosition: {x: -0.15051174, y: -0.00093460083}
+  m_SizeDelta: {x: 26.991, y: 26.4645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &301942813392243146
 CanvasRenderer:
@@ -1468,14 +1471,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!114 &8790401405440149850

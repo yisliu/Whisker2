@@ -9,10 +9,6 @@ public class finishOrder : MonoBehaviour
     public Sprite beverageSprite;
     public float tipAmount = 10f;
 
-    private void OnMouseDown()
-    {
-        foodDelivered();
-    }
 
     private void Update()
     {

@@ -33,6 +33,10 @@ public class customerDialogue : MonoBehaviour
     private bool isTyping;
     private bool waitingForInput;
 
+    private bool[] currentIsPlayer;
+    private string currentCustomerName;
+    private Sprite currentCustomerPortrait;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -79,7 +83,7 @@ public class customerDialogue : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string[] lines, string speaker, Sprite portrait)
+    public void StartDialogue(string[] lines, bool[] isPlayer, string customerName, Sprite portrait)
     {
         if (lines == null || lines.Length == 0)
         {
@@ -91,16 +95,11 @@ public class customerDialogue : MonoBehaviour
         lineIndex = 0;
         isTyping = false;
         waitingForInput = false;
-        if (speakerNameText != null)
-        {
-            speakerNameText.text = speaker;
-        }
-
-        if (speakerPortrait != null)
-        {
-            speakerPortrait.sprite = portrait;
-            speakerPortrait.gameObject.SetActive(portrait != null);
-        }
+        currentIsPlayer = isPlayer;
+        currentCustomerName = customerName;
+        currentCustomerPortrait = portrait;
+        ApplySpeak(0);
+        ApplySpeak(0);
         dialoguePanel.SetActive(true);
         textComponent.text = string.Empty;
         StartCoroutine(TypeText(currentLines[lineIndex]));
@@ -108,7 +107,28 @@ public class customerDialogue : MonoBehaviour
 
     public void StartPlayerDialogue(string[] lines)
     {
-        StartDialogue(lines, playerName, playerPortrait);
+        bool[] allPlayer = new bool[lines.Length];
+        for (int i = 0; i < allPlayer.Length; i++)
+        {
+            allPlayer[i] = true;
+        }
+        StartDialogue(lines, allPlayer, playerName, playerPortrait);
+    }
+
+    void ApplySpeak(int index)
+    {
+        bool isPlayer = currentIsPlayer != null && index < currentIsPlayer.Length && currentIsPlayer[index];
+        if (speakerNameText != null)
+        {
+            speakerNameText.text = isPlayer ? playerName : currentCustomerName;
+        }
+
+        if (speakerPortrait != null)
+        {
+            Sprite portrait = isPlayer ? playerPortrait : currentCustomerPortrait;
+            speakerPortrait.sprite = portrait;
+            speakerPortrait.gameObject.SetActive(portrait != null);
+        }
     }
 
     IEnumerator TypeText(string text)
@@ -166,6 +186,7 @@ public class customerDialogue : MonoBehaviour
         {
             lineIndex++;
             textComponent.text = string.Empty;
+            ApplySpeak(lineIndex);
             StartCoroutine(TypeText(currentLines[lineIndex]));
         }
         else

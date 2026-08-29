@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &570907694375899240
+--- !u!1 &594606301859021588
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4932020182483640490}
-  - component: {fileID: 8960789408193839822}
-  - component: {fileID: 6498086226841224929}
-  - component: {fileID: 8511659983655055154}
+  - component: {fileID: 6121305401358453741}
+  - component: {fileID: 1357604191728570428}
+  - component: {fileID: 349189792573724881}
+  - component: {fileID: 188730710470062091}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -19,41 +19,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4932020182483640490
+--- !u!224 &6121305401358453741
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570907694375899240}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 594606301859021588}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8658776248086391605}
+  - {fileID: 1290505496808314721}
   m_Father: {fileID: 8518508141745020441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -39.006996}
-  m_SizeDelta: {x: 100, y: 3.4665}
+  m_AnchoredPosition: {x: 1.4867611, y: -27.240078}
+  m_SizeDelta: {x: 26.991, y: 26.4645}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8960789408193839822
+--- !u!222 &1357604191728570428
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570907694375899240}
+  m_GameObject: {fileID: 594606301859021588}
   m_CullTransparentMesh: 1
---- !u!114 &6498086226841224929
+--- !u!114 &349189792573724881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570907694375899240}
+  m_GameObject: {fileID: 594606301859021588}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,111 +67,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8511659983655055154
+--- !u!114 &188730710470062091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570907694375899240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1312393287247888967
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8658776248086391605}
-  - component: {fileID: 4513255499132364511}
-  - component: {fileID: 9180361155726177230}
-  - component: {fileID: 1302841620628332914}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &8658776248086391605
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312393287247888967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4932020182483640490}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3448, y: 0.00012207}
-  m_SizeDelta: {x: 102.6895, y: 3.4668}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &4513255499132364511
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312393287247888967}
-  m_CullTransparentMesh: 1
---- !u!114 &9180361155726177230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312393287247888967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.45951766, g: 1, b: 0.4575472, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e004363ab04c405f920ec3e9f7354fb, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 0
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &1302841620628332914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312393287247888967}
+  m_GameObject: {fileID: 594606301859021588}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
@@ -297,7 +209,7 @@ RectTransform:
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4932020182483640490}
+  - {fileID: 6121305401358453741}
   m_Father: {fileID: 6789621479167328115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -969,7 +881,7 @@ MonoBehaviour:
   timer: 100
   orderPromptCanvas: {fileID: 3867314388999019097}
   timerCanvas: {fileID: 2934151007273768774}
-  timerFillImage: {fileID: 9180361155726177230}
+  timerFillImage: {fileID: 349189792573724881}
   timerColorGradient:
     serializedVersion: 2
     key0: {r: 0.9622642, g: 0.72169816, b: 0.72169816, a: 1}
@@ -1003,38 +915,41 @@ MonoBehaviour:
   happyP: {fileID: 0}
   sadP: {fileID: 0}
   anim: {fileID: 935304533407241411}
-  greetingLines:
+  customerName: Nana
+  customerPortrait: {fileID: 21300000, guid: eb02794a3a41a4aedab5b049bef14f76, type: 3}
+  greetingsLines:
   - Wow. Click tab to continue.
   - Welcome to Whisker! This is a baking game where you can drop the different ingredients
     in bins to get a food!
   - The customers have their order recipe on their heads!
   - Move with WASD keys  or arrow keys and pick things up with E key!
   - Now the story begins!
-  - "Nana(customer): HEY! you\u2019re Coco right? "
-  - 'Coco(you): Yes??? But, who are you? '
-  - 'Nana: Haha sorry, I forgot to introduce myself! '
-  - "Nana: I\u2019m Nana. "
-  - "Nana: You\u2019re new to the neighbourhood right? I love the way you\u2019ve
-    set this bakery up! Let me be your first customer!!! "
-  - "Nana: Hmmm\u2026 "
-  - 'Nana: I''m feeling a baguette today, can you make that for me? '
-  - "Coco: \u2026 "
-  - 'Nana: What are you waiting for? Head to the kitchen! '
-  - "Nana: By the way, whenever  you\u2019re unsure about how to make the pastry,
-    just check the order combination on top of my head."
+  - "HEY! you\u2019re Coco right? "
+  - 'Yes??? But, who are you? '
+  - 'Haha sorry, I forgot to introduce myself! '
+  - "I\u2019m Nana. "
+  - "You\u2019re new to the neighbourhood right? I love the way you\u2019ve set this
+    bakery up! Let me be your first customer!!! "
+  - "Hmmm\u2026 "
+  - 'I''m feeling a baguette today, can you make that for me? '
+  - "\u2026 "
+  - 'What are you waiting for? Head to the kitchen! '
+  - "By the way, whenever  you\u2019re unsure about how to make the pastry, just
+    check the order combination on top of my head."
+  greetingsIsPlayer: 000000000000010000000000010000
   thankYouLines:
-  - "Nana: You sure have some great baking skills! I can\u2019t wait to see what
-    you bring to the picnic! "
-  - 'Coco: Huh? What picnic? '
-  - 'Nana: Oops. '
-  - 'Nana: I forgot to tell you! In a few days, we have a community picnic and everyone
+  - "You sure have some great baking skills! I can\u2019t wait to see what you bring
+    to the picnic! "
+  - 'Huh? What picnic? '
+  - 'Oops. '
+  - 'I forgot to tell you! In a few days, we have a community picnic and everyone
     brings homemade goods. Don''t worry, I''ll remind you again when the day comes! '
+  thankYouIsPlayer: 00010000
   badLines:
   - "Nana: This doesn\u2019t taste quite right\u2026"
   - "But it\u2019s alright! Practice a bit more and you\u2019ll be ready for the
     picnic!  "
-  customerName: Nana
-  customerPortrait: {fileID: 21300000, guid: eb02794a3a41a4aedab5b049bef14f76, type: 3}
+  badIsPlayer: 0000
 --- !u!95 &935304533407241411
 Animator:
   serializedVersion: 7
@@ -1155,6 +1070,94 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6082184570358334621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6301930116468652615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290505496808314721}
+  - component: {fileID: 420683380937007793}
+  - component: {fileID: 921300233804290697}
+  - component: {fileID: 6777401537596503824}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1290505496808314721
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301930116468652615}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6121305401358453741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.15051126, y: 0.00093460083}
+  m_SizeDelta: {x: 26.6895, y: 26.4668}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &420683380937007793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301930116468652615}
+  m_CullTransparentMesh: 1
+--- !u!114 &921300233804290697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301930116468652615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.45951766, g: 1, b: 0.4575472, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6777401537596503824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301930116468652615}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08238f2c902894b0092939891de3e254, type: 3}
