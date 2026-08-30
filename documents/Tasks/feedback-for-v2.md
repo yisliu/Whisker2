@@ -20,7 +20,7 @@ Suggestment:
 
 Goals:  Fix and adjust first version of V2 of Whisker based on 
 	- [ ] P1.The game doesn't flow well because of bugs that prevent the game from flowing.
-	- [ ] P1. Adjust the layout so that the customers are in view when the game starts, reduce the size of the kitchen so everything is more compact and less empty.
+	- [x] P1. Adjust the layout so that the customers are in view when the game starts, reduce the size of the kitchen so everything is more compact and less empty.
 	- [ ] P1. Adjust the movement of the customers so they are less awkward and more realistic
 	- [x] P1.Add in open and close animations for frigdes, cabinent, and stove.
 	- [x] P1.Add in timer animation for stove.
