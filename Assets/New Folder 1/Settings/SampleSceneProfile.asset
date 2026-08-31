@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.98
+    m_Value: 9.85
   intensity:
     m_OverrideState: 1
     m_Value: 1.15
@@ -102,7 +102,7 @@ MonoBehaviour:
   active: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.6000326, b: 0.45882356, a: 1}
+    m_Value: {r: 1, g: 0.9061731, b: 0.7122642, a: 1}
   center:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
