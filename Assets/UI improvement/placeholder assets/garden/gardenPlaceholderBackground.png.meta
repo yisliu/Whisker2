@@ -408,6 +408,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: gardenPlaceholderBackground_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 29
+        width: 211
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5620493c7cba4ed288e9069fa894206
+      internalID: -197939413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gardenPlaceholderBackground_14
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 16
+        width: 72
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6747b55e38a4245c59374e68a5195d25
+      internalID: 1241300614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gardenPlaceholderBackground_15
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 24
+        width: 83
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459f843b928474b9cbdb403f7f5df9d9
+      internalID: 2014380102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -427,6 +493,9 @@ TextureImporter:
       gardenPlaceholderBackground_10: -850321416
       gardenPlaceholderBackground_11: -758001487
       gardenPlaceholderBackground_12: -934114149
+      gardenPlaceholderBackground_13: -197939413
+      gardenPlaceholderBackground_14: 1241300614
+      gardenPlaceholderBackground_15: 2014380102
       gardenPlaceholderBackground_2: 2072422770
       gardenPlaceholderBackground_3: -1898712982
       gardenPlaceholderBackground_4: 106960482
