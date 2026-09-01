@@ -121,12 +121,1068 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_0
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 332
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599c0c862c2ae447cac7c8d67048f7e9
+      internalID: 1089325400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 435
+        width: 679
+        height: 575
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a192f6479d34de89f996ef64905d2f
+      internalID: -1505632119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 824
+        width: 527
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898b306c29f4c422dabc6791f3b2948f
+      internalID: 1704382716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_3
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 738
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b6eb9eb6a2342d29f8673960a17824
+      internalID: -71646572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_4
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 734
+        width: 255
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bbe32e387854a0fad394facc900662
+      internalID: -2095766998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_5
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 446
+        width: 216
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535d5ec05f7734d878b7d77f99aa7f11
+      internalID: 1241002190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_6
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 650
+        width: 338
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a57e291e69c404ca85f0148e4c54b0
+      internalID: -214456206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_7
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 577
+        width: 332
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605a18ddeb2954f1195b01489f2fb918
+      internalID: 1881320532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_8
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 449
+        width: 258
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b404329e4ea02495091d4beeb49167d0
+      internalID: 1419089784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_9
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 423
+        width: 98
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3e3f2923a584727898774c7867479d
+      internalID: 1814667667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 203
+        width: 112
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d7a8682efdc4a09bb172c538512e39
+      internalID: -402165979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 120
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9560710c4a0364dab9e34329e648e179
+      internalID: 172442320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 211
+        width: 204
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4028a35d27749fe80518ec07eb8e56
+      internalID: 1355582395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_13
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 198
+        width: 117
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f63444e7177e45e6b84073eff91788b
+      internalID: 1284523265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_14
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 443
+        width: 81
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850c980abaf354cd3b5fcc48cc81ed92
+      internalID: -1144627336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_15
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 418
+        width: 39
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8792a7e2311a4e9b96c38fd5de1a3a4
+      internalID: -141223877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_16
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 326
+        width: 162
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd46b391906af4799904222106244907
+      internalID: 1244172024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_17
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 323
+        width: 89
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9836291aab6fb4c2387e30f0e3195176
+      internalID: 733306558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_18
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 24
+        width: 106
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de2f76b7638e4fa3a260cbfd6eb00e1
+      internalID: -1968146311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_19
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 21
+        width: 123
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83e201c6f0b242bc899a7203974248f
+      internalID: -686219258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_20
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 33
+        width: 99
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6033a773ee01644ab82b349e7e0de3cc
+      internalID: 168479688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_21
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 40
+        width: 82
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4be9c45f0ea47a8bd11c6f000bbcd8
+      internalID: 2009111291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 18
+        width: 154
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ef72d3484d34f43bb464ad4792dd9f
+      internalID: -1184126284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 41
+        width: 80
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66be4bc561f2c45ebba6add76c47c2fb
+      internalID: -2008170687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_24
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 36
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66a9e8879a1b46dd8246a41aedc60fb
+      internalID: -1204172566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_25
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 24
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7190d5698fa1c4f3b8164a0912a51220
+      internalID: 65193517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_26
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 55
+        width: 93
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8540cb1b681a41a3b497d03e9176f98
+      internalID: -746269370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_27
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 52
+        width: 88
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d792670b7bb4066bc3b9d64705dac9
+      internalID: -664859889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_28
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 58
+        width: 94
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122bf1ba989204c4593dd1f95a717d89
+      internalID: 813981672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_29
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 52
+        width: 94
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a606545bb8234b7cb1e5bd88dad7076
+      internalID: 1562840229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_30
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 29
+        width: 124
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce34f4d693d764182895828af7c4bd94
+      internalID: -421274664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_31
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 18
+        width: 139
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a18afd9f814406fb3ebea43f8a562a
+      internalID: 1178075625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_32
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 371
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bfac92941544003bba06a2ba523040
+      internalID: 1145851275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_33
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 306
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6595c00926e5e4538943019f549aaf5d
+      internalID: 953475009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_34
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 328
+        width: 72
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9729ad2035dca4235aa97ece4de94033
+      internalID: 1411299403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_35
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 390
+        width: 175
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48e253d3e771434aa97356533bca0f8
+      internalID: 1806567725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_36
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 320
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbd720edfaee45b9a0339d4195b1dd2
+      internalID: -317456581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_37
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 320
+        width: 65
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005e9a75448e440c8b0b62ed809e41fb
+      internalID: -400688300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_38
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 200
+        width: 72
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48a8505ed90d4e7db357f5f3ebf3758
+      internalID: 7930706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_39
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 203
+        width: 55
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb8d1203b38b459fbad39d89cf0868f
+      internalID: -875912898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_40
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 200
+        width: 50
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb52589e51b1436f8a07f12855d891b
+      internalID: -1970939327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_41
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 197
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca20363eaa564ae89a00e44312f324c
+      internalID: 639297611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_42
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 203
+        width: 67
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a280608e6b3a54efdaba2e7fbf11a4c9
+      internalID: 1556318830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_43
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 773
+        width: 206
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcd7301054e841f1af480d696ab177a
+      internalID: 30662721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_44
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 201
+        width: 61
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd0c91a7c9bd4a2288276c1048e25b1
+      internalID: 1549490418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_45
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 205
+        width: 70
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fddbb04b20a84b08828dc3649df6171
+      internalID: 657575750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 200
+        width: 71
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f37af2fce7349809f80e292e5c81f6
+      internalID: 1457439576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_47
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 201
+        width: 61
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214032b616f3446a79df9e5fd198809b
+      internalID: -1971855835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 08dfd367348f94d608f9798c84992412
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +1191,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beverageBarPlaceholder_0: 1089325400
+      beverageBarPlaceholder_1: -1505632119
+      beverageBarPlaceholder_10: -402165979
+      beverageBarPlaceholder_11: 172442320
+      beverageBarPlaceholder_12: 1355582395
+      beverageBarPlaceholder_13: 1284523265
+      beverageBarPlaceholder_14: -1144627336
+      beverageBarPlaceholder_15: -141223877
+      beverageBarPlaceholder_16: 1244172024
+      beverageBarPlaceholder_17: 733306558
+      beverageBarPlaceholder_18: -1968146311
+      beverageBarPlaceholder_19: -686219258
+      beverageBarPlaceholder_2: 1704382716
+      beverageBarPlaceholder_20: 168479688
+      beverageBarPlaceholder_21: 2009111291
+      beverageBarPlaceholder_22: -1184126284
+      beverageBarPlaceholder_23: -2008170687
+      beverageBarPlaceholder_24: -1204172566
+      beverageBarPlaceholder_25: 65193517
+      beverageBarPlaceholder_26: -746269370
+      beverageBarPlaceholder_27: -664859889
+      beverageBarPlaceholder_28: 813981672
+      beverageBarPlaceholder_29: 1562840229
+      beverageBarPlaceholder_3: -71646572
+      beverageBarPlaceholder_30: -421274664
+      beverageBarPlaceholder_31: 1178075625
+      beverageBarPlaceholder_32: 1145851275
+      beverageBarPlaceholder_33: 953475009
+      beverageBarPlaceholder_34: 1411299403
+      beverageBarPlaceholder_35: 1806567725
+      beverageBarPlaceholder_36: -317456581
+      beverageBarPlaceholder_37: -400688300
+      beverageBarPlaceholder_38: 7930706
+      beverageBarPlaceholder_39: -875912898
+      beverageBarPlaceholder_4: -2095766998
+      beverageBarPlaceholder_40: -1970939327
+      beverageBarPlaceholder_41: 639297611
+      beverageBarPlaceholder_42: 1556318830
+      beverageBarPlaceholder_43: 30662721
+      beverageBarPlaceholder_44: 1549490418
+      beverageBarPlaceholder_45: 657575750
+      beverageBarPlaceholder_46: 1457439576
+      beverageBarPlaceholder_47: -1971855835
+      beverageBarPlaceholder_5: 1241002190
+      beverageBarPlaceholder_6: -214456206
+      beverageBarPlaceholder_7: 1881320532
+      beverageBarPlaceholder_8: 1419089784
+      beverageBarPlaceholder_9: 1814667667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
