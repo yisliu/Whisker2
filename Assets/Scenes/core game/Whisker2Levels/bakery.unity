@@ -7060,8 +7060,8 @@ MonoBehaviour:
   winPanel: {fileID: 1961708934}
   mainMenuScene: Start Screen
   nextLevelButton: {fileID: 2120270490}
-  nextSceneAsset: {fileID: 102900000, guid: c830ff80449dc4c50b4c63db93cb7a2c, type: 3}
-  nextScene: willow
+  nextSceneAsset: {fileID: 102900000, guid: e50577c31eb3844dca00aa2961793b69, type: 3}
+  nextScene: garden
   winCondition: 1
   targetKills: 0
   targetPoints: 10
@@ -8246,7 +8246,7 @@ MonoBehaviour:
   - {fileID: 347208398}
   - {fileID: 2130683415}
   - {fileID: 808760934}
-  totalCustomers: 12
+  totalCustomers: 1
 --- !u!1 &757431055
 GameObject:
   m_ObjectHideFlags: 0
@@ -11603,7 +11603,7 @@ Transform:
   m_GameObject: {fileID: 1129260891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.063999936, y: 0.69000053, z: 0.004000015}
+  m_LocalPosition: {x: -0.063999936, y: -1.3099995, z: 0.004000015}
   m_LocalScale: {x: 0.04, y: 0.5, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13168,7 +13168,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 256ec2f16167b4789a45e9ab51d95594, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: a3ea3523f29d04881b4475aae999b1d2, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1290623610
 GameObject:

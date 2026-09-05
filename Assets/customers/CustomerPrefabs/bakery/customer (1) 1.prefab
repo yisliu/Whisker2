@@ -312,7 +312,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1374,6 +1374,7 @@ GameObject:
   - component: {fileID: 1417550850108871303}
   - component: {fileID: 2910686695917790656}
   - component: {fileID: 479505081237268524}
+  - component: {fileID: -4608329087522504065}
   m_Layer: 0
   m_Name: customer (1) 1
   m_TagString: Enemy
@@ -1585,3 +1586,20 @@ MonoBehaviour:
   noteCanvas: {fileID: 7466069437603865840}
   foodIcon: {fileID: 5972525403598525313}
   beverageIcon: {fileID: 0}
+--- !u!114 &-4608329087522504065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089864589465552639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: Carrot
+  beverageTag: 
+  foodSprite: {fileID: 21300000, guid: 1315c9c6efcd44418a53fc57d3c2a49d, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10

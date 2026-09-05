@@ -101,6 +101,7 @@ public class Throwable : MonoBehaviour
     {
         isHeld = false;
         transform.SetParent(null);
+        transform.position += transform.forward * 0.6f;
         col.enabled = true;
         rb.isKinematic = false;
     }
@@ -126,8 +127,11 @@ public class Throwable : MonoBehaviour
 
         EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
         if (enemy != null)
+        {
             enemy.TakeDamage(throwDamage);
+            Destroy(gameObject);
 
-        Destroy(gameObject);
+        }
+
     }
 }

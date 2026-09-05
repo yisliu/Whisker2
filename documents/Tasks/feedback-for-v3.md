@@ -1,10 +1,10 @@
 8/28/2026
 Deadline: 
 	V2 done by Sunday, 8/30/2026
-	Level 2 and 3 done by Wednesday next week, 9/3/2026
+	Level 2 and 3 done by Wednesday next week, 9/2/2026
 	Get placeholder assets and add it into game, 8/30/2026
 	Add in personal assets based on vision and placeholder, 10/15/2026
-	V3 done by 9/4/2026 and publish
+	V3 done by 9/3/2026 and publish
 	V4 done by 10/16/2026 and publish with video
 	Film video trailer for game 10/16/2026
 

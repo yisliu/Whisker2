@@ -22,6 +22,19 @@ TagManager:
   - lemon_roll
   - strawberry_cake
   - baguette2
+  - strawberrySeed
+  - blueberrySeed
+  - tomatoSeed
+  - watermelonSeed
+  - pumpkinSeed
+  - wheatSeed
+  - blueberryPlant
+  - pumpkinPlant
+  - strawberryPlant
+  - tomatoPlant
+  - watermelonPlant
+  - wheatPlant
+  - fertilizer
   layers:
   - Default
   - TransparentFX

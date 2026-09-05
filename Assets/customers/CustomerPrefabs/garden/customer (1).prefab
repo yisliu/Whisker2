@@ -762,6 +762,7 @@ GameObject:
   - component: {fileID: 6765691253277924587}
   - component: {fileID: 935304533407241411}
   - component: {fileID: 374544235261456287}
+  - component: {fileID: 2811070216172034935}
   m_Layer: 0
   m_Name: customer (1)
   m_TagString: Enemy
@@ -876,7 +877,7 @@ MonoBehaviour:
   sPoint: {fileID: 0}
   ePoint: {fileID: 0}
   orderNote: {fileID: 374544235261456287}
-  foodSprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
+  foodSprite: {fileID: -898195806, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
   beverageSprite: {fileID: 0}
   timer: 100
   orderPromptCanvas: {fileID: 3867314388999019097}
@@ -987,6 +988,23 @@ MonoBehaviour:
   noteCanvas: {fileID: 4399101331817213212}
   foodIcon: {fileID: 3484915392575735189}
   beverageIcon: {fileID: 0}
+--- !u!114 &2811070216172034935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734305821459728176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: pumpkinPlant
+  beverageTag: 
+  foodSprite: {fileID: -898195806, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
+  beverageSprite: {fileID: 0}
+  tipAmount: 10
 --- !u!1 &6082184570358334621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
+  m_Sprite: {fileID: -898195806, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1191,7 +1209,7 @@ Transform:
   m_GameObject: {fileID: 6513392879056237444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.162, y: 0.942, z: 0.1}
+  m_LocalPosition: {x: 0.262, y: 0.942, z: 0.1}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1262,7 +1280,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 103e182995a73404c8bab45d1cb2dbff, type: 3}
+  m_Sprite: {fileID: 185357898, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1314,7 +1332,7 @@ Transform:
   m_GameObject: {fileID: 7469775588750407978}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.189, y: 0.949, z: 0.1}
+  m_LocalPosition: {x: -0.28899997, y: 0.949, z: 0.1}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1385,7 +1403,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 103e182995a73404c8bab45d1cb2dbff, type: 3}
+  m_Sprite: {fileID: -881994267, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
