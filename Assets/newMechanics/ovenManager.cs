@@ -1,177 +1,109 @@
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
+//using DG.Tweening;
 
 public class ovenManager : MonoBehaviour
 {
+    [Header("Door Sprites")] 
+    public SpriteRenderer ovenRenderer;
 
-    [Header("Door")] 
-    public Transform door;
-
-    public float openAngle = 100f;
-
-    public float animDuration = 0.3f;
-
-    public Vector3 rotationAxis = Vector3.up;
-
-    [Header("Cooking")] 
-    public string requiredRawTag;
-
-    public GameObject cookedFoodPrefab;
-
-    public Transform depositPoint;
-
-    public Transform outputPoint;
-
-    public float cookTime = 4f;
-
-    public float burnTime = 6f;
+    public Sprite openSprite;
+    public Sprite closedSprite;
 
     [Header("UI")] 
     public Image cookTimerFill;
 
     public GameObject promptCanvas;
-
     public GameObject timerCanvas;
-
-    private bool playerInRange = false;
-
-    private bool isCooking = false;
-
-    private bool isCooked = false;
-
-    private float timer = 0f;
-
-    private float burnTimer = 0f;
-
-    private GameObject cookedInstance;
-
-    private Quaternion closedRotation;
-    private Quaternion openRotation;
+    public float cookTime = 4f;
+    private bool playerInRange;
+    private bool isCooking;
+    private float timer;
     
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Effects")]
+    public ParticleSystem smokeEffect;
+
     void Start()
     {
-        closedRotation = door.localRotation;
-        openRotation = Quaternion.Euler(door.localEulerAngles + rotationAxis * openAngle);
         promptCanvas.SetActive(false);
         timerCanvas.SetActive(false);
         cookTimerFill.fillAmount = 1f;
+        ovenRenderer.sprite = openSprite;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (isCooking)
+        if (!isCooking)
         {
-            timer -= Time.deltaTime;
-            cookTimerFill.fillAmount = timer / cookTime;
-            cookTimerFill.color = Color.Lerp(Color.red, Color.green, timer / cookTime);
-
-            if (timer <= 0f)
-            {
-                FinishCooking();
-            }
-
-            return;
-
-        }
-
-        if (isCooked)
-        {
-            burnTimer += Time.deltaTime;
-            if (burnTimer >= burnTime)
-            {
-                Burn();
-            }
-
             return;
         }
-
-        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !applianceInteraction.InputConsumed)
-        {
-            TryDeposit();
-        }
+        timer -= Time.deltaTime;
+        cookTimerFill.fillAmount = timer/cookTime;
+        cookTimerFill.color = Color.Lerp(Color.red, Color.green, timer/cookTime);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
         {
-            playerInRange = true;
-            UpdatePrompt();
+            return;
+        }
+        playerInRange = true;
+        if (!isCooking)
+        {
+            promptCanvas.SetActive(true);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = false;
-            promptCanvas.SetActive(false);
-        }
-    }
-
-    void TryDeposit()
-    {
-        GameObject activeItem = InventorySystem.Instance.GetActiveItem();
-        if (activeItem == null || !activeItem.CompareTag(requiredRawTag))
+        if (!other.CompareTag("Player"))
         {
             return;
         }
-        applianceInteraction.InputConsumed = true;
-        InventorySystem.Instance.TakeActiveItem();
-        Destroy(activeItem);
+
+        playerInRange = false;
+        promptCanvas.SetActive(false);
+    }
+
+    public void StartCooking()
+    {
+        if (smokeEffect != null)
+        {
+            smokeEffect.Play();
+        }
         isCooking = true;
         timer = cookTime;
         timerCanvas.SetActive(true);
         promptCanvas.SetActive(false);
-        door.DOLocalRotate(closedRotation.eulerAngles, animDuration).SetEase(Ease.InBack);
+        ovenRenderer.sprite = closedSprite;
     }
 
-    void FinishCooking()
+    public void OnCookingComplete()
     {
+        if (smokeEffect != null)
+        {
+            smokeEffect.Stop();
+        }
         isCooking = false;
-        isCooked = true;
-        burnTimer = 0f;
         timerCanvas.SetActive(false);
         cookTimerFill.fillAmount = 1f;
-
-        cookedInstance = Instantiate(cookedFoodPrefab, outputPoint.position, outputPoint.rotation);
-        door.DOLocalRotate(openRotation.eulerAngles, animDuration).SetEase(Ease.OutBack);
-        if (playerInRange)
-        {
-            UpdatePrompt();
-        }
+        ovenRenderer.sprite = openSprite;
     }
 
-    void Burn()
+    public void OnBurn()
     {
-        isCooked = false;
-        burnTimer = 0f;
-        if (cookedInstance != null)
+        if (smokeEffect != null)
         {
-            Destroy(cookedInstance);
+            smokeEffect.Stop();
         }
-        
-        door.DOLocalRotate(closedRotation.eulerAngles, animDuration).SetEase(Ease.InBack);
+        isCooking = false;
+        timerCanvas.SetActive(false);
+        cookTimerFill.fillAmount = 1f;
+        ovenRenderer.sprite = closedSprite;
         if (playerInRange)
         {
-            UpdatePrompt();
+            promptCanvas.SetActive(true);
         }
-    }
-
-    void UpdatePrompt()
-    {
-        if (isCooking || isCooked)
-        {
-            return;
-        }
-        
-        GameObject activeItem = InventorySystem.Instance.GetActiveItem();
-        bool canDeposit = activeItem != null && activeItem.CompareTag(requiredRawTag);
-        promptCanvas.SetActive(canDeposit);
-        
     }
 }

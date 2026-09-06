@@ -62,7 +62,15 @@ public class InventorySystem : MonoBehaviour
                     col.enabled = false;
                 }
                 item.SetActive(false);
-                InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                //InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                if (InventoryUI.Instance != null)
+                {
+                    InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                }
+                else
+                {
+                    Debug.LogWarning("InventoryUI.Instance is null - add InventoryUI to the scene.");
+                }
                 UpdateHoldPoint();
                 return true;
             }
@@ -154,7 +162,7 @@ public class InventorySystem : MonoBehaviour
         var img = item.GetComponentInChildren<SpriteRenderer>();
         return img ? img.sprite : null;
     }
-
+/*
     public GameObject FindItemByTag(string tag)
     {
         foreach (var slot in slots)
@@ -163,6 +171,22 @@ public class InventorySystem : MonoBehaviour
             {
                 return slot;
             }
+        }
+
+        return null;
+    }
+*/
+    public GameObject FindItemByTag(string tag)
+    {
+        Debug.Log($"Looking for tags: '{tag}' | slots:{slots[0]?.tag}, {slots[1]?.tag}, {slots[2]?.tag}, {slots[3]?.tag}");
+        foreach (var slot in slots)
+        {
+            if (slot != null && slot.CompareTag(tag))
+            {
+                return slot;
+            }
+
+            //return null;
         }
 
         return null;

@@ -162,6 +162,7 @@ public class applianceInteraction : MonoBehaviour
 
     void Start()
     {
+        
         if (door == null)
         {
             Debug.LogError(gameObject.name + " has no door");

@@ -22,6 +22,47 @@ TagManager:
   - lemon_roll
   - strawberry_cake
   - baguette2
+  - strawberrySeed
+  - blueberrySeed
+  - tomatoSeed
+  - watermelonSeed
+  - pumpkinSeed
+  - wheatSeed
+  - blueberryPlant
+  - pumpkinPlant
+  - strawberryPlant
+  - tomatoPlant
+  - watermelonPlant
+  - wheatPlant
+  - fertilizer
+  - lemonC
+  - lime
+  - orange
+  - strawberryC
+  - blueberryC
+  - raspberry
+  - cherry
+  - watermelon
+  - mint
+  - ginger
+  - vanilla
+  - coffee1
+  - coffee2
+  - coffee3
+  - milk
+  - sugar
+  - ice
+  - cinnamon
+  - honeyC
+  - honeyTea
+  - mintTea
+  - lemonTea
+  - strawberryTea
+  - orangeJuice
+  - coldCoffee
+  - mintCoffee
+  - gingerTea
+  - milkCoffee
   layers:
   - Default
   - TransparentFX

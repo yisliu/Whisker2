@@ -37,7 +37,8 @@ public class highlightTutorial : MonoBehaviour
             arrowSprite.SetActive(false);
             arrowSprite2.SetActive(true);
             arrowSprite2.transform.DOLocalMoveY(arrowSprite2.transform.localPosition.y + 1.5f, 0.5f)
-                .SetLoops(-1, LoopType.Yoyo);
+                .SetLoops(-1, LoopType.Yoyo)
+                .SetLink(arrowSprite2);
         }
 
         if (step == 2)

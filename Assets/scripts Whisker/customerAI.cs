@@ -30,10 +30,17 @@ public class customerAI : MonoBehaviour
     [SerializeField] private Animator anim;
 
     [Header("Dialogue")] 
-    [SerializeField] private string[] greetingLines;
-    [SerializeField] private string[] thankYouLines;
-    [SerializeField] private string[] badLines;
+    
+    [SerializeField] private string customerName;
+    [SerializeField] private Sprite customerPortrait;
 
+    [SerializeField] private string[] greetingsLines;
+    [SerializeField] private bool[] greetingsIsPlayer;
+    [SerializeField] private string[] thankYouLines;
+    [SerializeField] private bool[] thankYouIsPlayer;
+    [SerializeField] private string[] badLines;
+    [SerializeField] private bool[] badIsPlayer;
+    
     private NavMeshAgent agent;
     private float wTimer;
     private enum State { Walking, WaitingForOrder, WaitingForFood, Leaving }
@@ -207,35 +214,17 @@ public class customerAI : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"<color=yellow>[CustomerAI]</color> Trigger entered on '{gameObject.name}' by: {other.gameObject.name} (Tag: {other.tag})");
 
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-            Debug.Log($"<color=green>[CustomerAI]</color> Player entered interaction range for '{gameObject.name}'. Current State: {state}");
-            UpdatePromptVisibility();
-        }
-    }
 
-    void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player") && !playerInRange)
-        {
-            playerInRange = true;
-            UpdatePromptVisibility();
-        }
-    }
+
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.transform.root.CompareTag("Player"))
         {
-            playerInRange = false;
-            Debug.Log($"<color=yellow>[CustomerAI]</color> Player exited interaction range for '{gameObject.name}'.");
-            UpdatePromptVisibility();
+            return;
         }
+        playerInRange = false;
     }
 
     private void UpdatePromptVisibility()
@@ -274,7 +263,7 @@ public class customerAI : MonoBehaviour
         }
 
         orderNote?.HideOrder();
-        customerDialogue.Instance?.StartDialogue(thankYouLines);
+        customerDialogue.Instance?.StartDialogue(thankYouLines, thankYouIsPlayer, customerName, customerPortrait);
         PlayEffect(happyP);
         StartLeaving();
     }
@@ -284,7 +273,7 @@ public class customerAI : MonoBehaviour
         if (state != State.Leaving)
         {
             Debug.Log($"<color=cyan>[CustomerAI]</color> Triggering greeting dialogue for '{gameObject.name}'.");
-            customerDialogue.Instance?.StartDialogue(greetingLines);
+            customerDialogue.Instance?.StartDialogue(greetingsLines, greetingsIsPlayer, customerName, customerPortrait);
         }
     }
 
@@ -346,7 +335,7 @@ public class customerAI : MonoBehaviour
 
         Debug.LogWarning($"[CustomerAI] Wrong order delivered to '{gameObject.name}'!");
         MoneyManager.Instance?.DeductMoney(5f);
-        customerDialogue.Instance?.StartDialogue(badLines);
+        customerDialogue.Instance?.StartDialogue(badLines, badIsPlayer,  customerName, customerPortrait);
     }
 
     public void SetPoints(Transform servicePoint, Transform exitPoint)
@@ -388,5 +377,26 @@ public class customerAI : MonoBehaviour
                 Debug.LogWarning($"[CustomerAI] OnDestroy could not find customerManager in scene.");
             }
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (!other.transform.root.CompareTag("Player"))
+        {
+            return;
+        }
+        playerInRange = true;
+        UpdatePromptVisibility();
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (!other.transform.root.CompareTag("Player") || playerInRange)
+        {
+            return;
+        }
+
+        playerInRange = true;
+        UpdatePromptVisibility();
     }
 }
