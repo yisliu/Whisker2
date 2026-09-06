@@ -742,7 +742,7 @@ TextureImporter:
       name: beverageBarPlaceholder_28
       rect:
         serializedVersion: 2
-        x: 832
+        x: 834
         y: 58
         width: 94
         height: 101
@@ -1099,7 +1099,7 @@ TextureImporter:
         width: 61
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1121,7 +1121,7 @@ TextureImporter:
         width: 70
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1143,7 +1143,7 @@ TextureImporter:
         width: 71
         height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1165,7 +1165,7 @@ TextureImporter:
         width: 61
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1174,6 +1174,94 @@ TextureImporter:
       bones: []
       spriteID: 214032b616f3446a79df9e5fd198809b
       internalID: -1971855835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_48
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 200
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca8708098f7b405585801c54bb9c775
+      internalID: 1430137200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_49
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 509
+        width: 174
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ef7d19483b34a8aabd42d679c003d4
+      internalID: -1515311359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_50
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 199
+        width: 94
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea9df079b715469a8628a6dea12405f
+      internalID: -1343616275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beverageBarPlaceholder_51
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 204
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb141f13538ed4c49bd650bc4d9b78be
+      internalID: 523264546
       vertices: []
       indices: 
       edges: []
@@ -1235,7 +1323,11 @@ TextureImporter:
       beverageBarPlaceholder_45: 657575750
       beverageBarPlaceholder_46: 1457439576
       beverageBarPlaceholder_47: -1971855835
+      beverageBarPlaceholder_48: 1430137200
+      beverageBarPlaceholder_49: -1515311359
       beverageBarPlaceholder_5: 1241002190
+      beverageBarPlaceholder_50: -1343616275
+      beverageBarPlaceholder_51: 523264546
       beverageBarPlaceholder_6: -214456206
       beverageBarPlaceholder_7: 1881320532
       beverageBarPlaceholder_8: 1419089784
