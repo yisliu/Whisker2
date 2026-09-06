@@ -62,7 +62,15 @@ public class InventorySystem : MonoBehaviour
                     col.enabled = false;
                 }
                 item.SetActive(false);
-                InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                //InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                if (InventoryUI.Instance != null)
+                {
+                    InventoryUI.Instance.UpdateSlot(i, GetSprite(item));
+                }
+                else
+                {
+                    Debug.LogWarning("InventoryUI.Instance is null - add InventoryUI to the scene.");
+                }
                 UpdateHoldPoint();
                 return true;
             }

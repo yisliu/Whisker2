@@ -555,7 +555,6 @@ GameObject:
   - component: {fileID: 741677161467966608}
   - component: {fileID: 5504609489237736532}
   - component: {fileID: 5285317681294654048}
-  - component: {fileID: 4511445680724767214}
   m_Layer: 0
   m_Name: customer 1
   m_TagString: Enemy
@@ -765,23 +764,6 @@ MonoBehaviour:
   noteCanvas: {fileID: 1370838680624265825}
   foodIcon: {fileID: 7073356534708002116}
   beverageIcon: {fileID: 0}
---- !u!114 &4511445680724767214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4095858558600090783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: croissant
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: c3ea9aba448aa4234b838612d7e05c5a, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!1 &5771749743031631715
 GameObject:
   m_ObjectHideFlags: 0

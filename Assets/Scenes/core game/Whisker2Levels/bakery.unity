@@ -8229,11 +8229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerPrefabs:
-  - {fileID: 934559856917074628, guid: 5979f33a6c30d4205bb041e9510882b0, type: 3}
-  - {fileID: 5734305821459728176, guid: 87d58ba6f40244e369080d157386de26, type: 3}
-  - {fileID: 9089864589465552639, guid: 0fe6146f713ec48c092741e401d6bd00, type: 3}
-  - {fileID: 4095858558600090783, guid: 34ca12e41d3de4b048013deec8a178da, type: 3}
   - {fileID: 3619568599816573578, guid: 3864a932566314de5be96bc6f3bd0588, type: 3}
+  - {fileID: 934559856917074628, guid: 5979f33a6c30d4205bb041e9510882b0, type: 3}
   spawnPoints:
   - {fileID: 341184933}
   - {fileID: 257068379}
@@ -10669,7 +10666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectA: {fileID: 1187415783808774407, guid: 9a77f5db07fed4139965825f721a8826, type: 3}
   objectB: {fileID: 1187415783808774407, guid: 9a77f5db07fed4139965825f721a8826, type: 3}
-  objectR: {fileID: 1187415783808774407, guid: a4de32b393499448188ca56c64bb16b3, type: 3}
+  objectR: {fileID: 1187415783808774407, guid: 8fac0a339f5724520bd36ff72981d888, type: 3}
   spawnPoint: {fileID: 1129260892}
   oven: {fileID: 733978109}
   burnTime: 6

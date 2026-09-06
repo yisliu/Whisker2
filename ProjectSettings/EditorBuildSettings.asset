@@ -68,6 +68,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/core game/Whisker2Levels/garden.unity
     guid: e50577c31eb3844dca00aa2961793b69
+  - enabled: 1
+    path: Assets/Scenes/core game/Whisker2Levels/cafe.unity
+    guid: dd5d7e3ea6ece4c95a3b7afd5020a268
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

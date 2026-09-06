@@ -17,6 +17,7 @@ public class customerManager : MonoBehaviour
     
     private Queue<GameObject> customerQueue = new Queue<GameObject>();
     private GameObject[] activeCustomers;
+    private bool sessionEnded = false;
 
     void Awake()
     {
@@ -89,6 +90,11 @@ public class customerManager : MonoBehaviour
 
     void SpawnAtPoint(int index)
     {
+        if (!Application.isPlaying)
+        {
+            return;
+        }
+        
         if (customerQueue.Count == 0)
         {
             Debug.LogWarning($"<color=yellow>[CustomerManager]</color> SpawnAtPoint({index}) called, but the customer queue is empty.");
@@ -149,6 +155,7 @@ public class customerManager : MonoBehaviour
 
     public void OnCustomerDone(customerAI customer)
     {
+        
         if (!Application.isPlaying || this == null)
         {
             return;
@@ -200,6 +207,7 @@ public class customerManager : MonoBehaviour
 
     void EndSession()
     {
+        sessionEnded = true;
         Debug.Log("<color=gold>=========================================</color>");
         Debug.Log("<color=gold>[CustomerManager] SHIFT DONE! Triggering Win Screen.</color>");
         Debug.Log("<color=gold>=========================================</color>");

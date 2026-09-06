@@ -15505,8 +15505,8 @@ MonoBehaviour:
   winPanel: {fileID: 1961708934}
   mainMenuScene: Start Screen
   nextLevelButton: {fileID: 2120270490}
-  nextSceneAsset: {fileID: 102900000, guid: 2bb508189f0354e8293e80328682176a, type: 3}
-  nextScene: finalCutscen
+  nextSceneAsset: {fileID: 102900000, guid: dd5d7e3ea6ece4c95a3b7afd5020a268, type: 3}
+  nextScene: cafe
   winCondition: 1
   targetKills: 0
   targetPoints: 10
@@ -43102,11 +43102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerPrefabs:
-  - {fileID: 934559856917074628, guid: 3738c285ae8d64da98aecaed68267f98, type: 3}
-  - {fileID: 5734305821459728176, guid: 74e282e36a9854b6ca180d280337a56a, type: 3}
   - {fileID: 9089864589465552639, guid: 4ec7ba87607774a87a485fc0bf539082, type: 3}
   - {fileID: 4095858558600090783, guid: f80cf88da4550420e833b29cbbe1c557, type: 3}
-  - {fileID: 3619568599816573578, guid: 5b8f8398646014b0886e20a0c186e9d0, type: 3}
   spawnPoints:
   - {fileID: 536520702}
   - {fileID: 2146061251}

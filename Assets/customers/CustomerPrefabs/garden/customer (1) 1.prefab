@@ -397,9 +397,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTag: Carrot
+  itemTag: watermelonPlant
   beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 1315c9c6efcd44418a53fc57d3c2a49d, type: 3}
+  foodSprite: {fileID: -880205182, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
   beverageSprite: {fileID: 0}
   tipAmount: 10
 --- !u!1 &3588941124364543591
@@ -1374,7 +1374,6 @@ GameObject:
   - component: {fileID: 1417550850108871303}
   - component: {fileID: 2910686695917790656}
   - component: {fileID: 479505081237268524}
-  - component: {fileID: 411713914075080458}
   m_Layer: 0
   m_Name: customer (1) 1
   m_TagString: Enemy
@@ -1586,20 +1585,3 @@ MonoBehaviour:
   noteCanvas: {fileID: 7466069437603865840}
   foodIcon: {fileID: 5972525403598525313}
   beverageIcon: {fileID: 0}
---- !u!114 &411713914075080458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9089864589465552639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: watermelonPlant
-  beverageTag: 
-  foodSprite: {fileID: -880205182, guid: ac1246837d2b54e20a97e0333823dc62, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10

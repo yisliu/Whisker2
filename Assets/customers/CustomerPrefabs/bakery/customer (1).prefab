@@ -762,7 +762,6 @@ GameObject:
   - component: {fileID: 6765691253277924587}
   - component: {fileID: 935304533407241411}
   - component: {fileID: 374544235261456287}
-  - component: {fileID: 8790737529104677034}
   m_Layer: 0
   m_Name: customer (1)
   m_TagString: Enemy
@@ -988,23 +987,6 @@ MonoBehaviour:
   noteCanvas: {fileID: 4399101331817213212}
   foodIcon: {fileID: 3484915392575735189}
   beverageIcon: {fileID: 0}
---- !u!114 &8790737529104677034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5734305821459728176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cee2b80839e4eddb88cee2f1313eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTag: baguette
-  beverageTag: 
-  foodSprite: {fileID: 21300000, guid: 38b2f91f55aa746f18374fa6075a3818, type: 3}
-  beverageSprite: {fileID: 0}
-  tipAmount: 10
 --- !u!1 &6082184570358334621
 GameObject:
   m_ObjectHideFlags: 0
