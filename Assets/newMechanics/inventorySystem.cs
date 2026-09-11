@@ -191,6 +191,37 @@ public class InventorySystem : MonoBehaviour
 
         return null;
     }
+
+    public int CountItemsByTag(string tag)
+    {
+        int count = 0;
+        foreach (var slot in slots)
+        {
+            if (slot != null && slot.CompareTag(tag))
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public void RemoveItemsByTag(string tag, int count)
+    {
+        int removed = 0;
+        for (int i = 0; i < slots.Length && removed < count; i++)
+        {
+            if (slots[i] != null && slots[i].CompareTag(tag))
+            {
+                GameObject item = slots[i];
+                slots[i] = null;
+                InventoryUI.Instance?.UpdateSlot(i, null);
+                Destroy(item);
+                removed++;
+            }
+        }
+        UpdateHoldPoint();
+    }
 /*
     public GameObject FindItemByID(int id)
     {
