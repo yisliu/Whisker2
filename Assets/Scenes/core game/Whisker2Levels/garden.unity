@@ -43103,7 +43103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerPrefabs:
   - {fileID: 9089864589465552639, guid: 4ec7ba87607774a87a485fc0bf539082, type: 3}
-  - {fileID: 4095858558600090783, guid: f80cf88da4550420e833b29cbbe1c557, type: 3}
+  - {fileID: 4095858558600090783, guid: 0b0ef16abbfd644b49e6cff7acddb056, type: 3}
   spawnPoints:
   - {fileID: 536520702}
   - {fileID: 2146061251}

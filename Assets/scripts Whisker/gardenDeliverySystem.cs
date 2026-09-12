@@ -24,7 +24,7 @@ public class gardenDeliverySystem : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit) && hit.transform != null)
         {
-            bool isTarget = hit.transform == transform || hit.transform.root = transform.root;
+            bool isTarget = hit.transform == transform || hit.transform.root == transform.root;
             if (isTarget)
             {
                 TryDeliver();
