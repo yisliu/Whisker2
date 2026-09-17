@@ -28195,7 +28195,7 @@ Animator:
   m_GameObject: {fileID: 1452427915}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1aa8d7a8a110b4900ab99ee21ed749ef, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2f098a89ff6b3433bb167bda6935456d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -28256,7 +28256,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 4
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -28273,7 +28273,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.002740171, y: 0, z: 0, w: 0.99999624}
   m_LocalPosition: {x: -45, y: 18.4, z: 120}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1489934971}
