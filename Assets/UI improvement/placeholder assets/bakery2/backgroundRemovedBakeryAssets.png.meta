@@ -483,7 +483,7 @@ TextureImporter:
         width: 179
         height: 268
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -505,7 +505,7 @@ TextureImporter:
         width: 69
         height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,9 +525,9 @@ TextureImporter:
         x: 769
         y: 511
         width: 52
-        height: 188
+        height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -549,7 +549,7 @@ TextureImporter:
         width: 66
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -571,7 +571,7 @@ TextureImporter:
         width: 75
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -593,7 +593,7 @@ TextureImporter:
         width: 72
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -615,7 +615,7 @@ TextureImporter:
         width: 206
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -637,7 +637,7 @@ TextureImporter:
         width: 211
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,6 +646,72 @@ TextureImporter:
       bones: []
       spriteID: e6759de7f4bd64e5cb90806cf14da138
       internalID: -2080108678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_24
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 181
+        width: 107
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c387668a4975d49409abbd489793214c
+      internalID: -49584015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_25
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 360
+        width: 213
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d532e4b6b45643f9b965d9f061dc7d4
+      internalID: -1036874656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_26
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 528
+        width: 221
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2994a4c2403418d9e9619f39a4baf8
+      internalID: 1193781845
       vertices: []
       indices: 
       edges: []
@@ -681,6 +747,9 @@ TextureImporter:
       backgroundRemovedBakeryAssets_21: -1574586343
       backgroundRemovedBakeryAssets_22: 1867002814
       backgroundRemovedBakeryAssets_23: -2080108678
+      backgroundRemovedBakeryAssets_24: -49584015
+      backgroundRemovedBakeryAssets_25: -1036874656
+      backgroundRemovedBakeryAssets_26: 1193781845
       backgroundRemovedBakeryAssets_3: -1292485159
       backgroundRemovedBakeryAssets_4: 1346434768
       backgroundRemovedBakeryAssets_5: 429042628
