@@ -80,7 +80,8 @@ public class PlayerMovementFixed : MonoBehaviour
         if (!isGrounded)
         {
             RaycastHit hit;
-            float rayDistance = (controller.height / 2f) + 0.3f;
+            //float rayDistance = (controller.height / 2f) + 0.3f;
+            float rayDistance = 0.1f;
             if (Physics.Raycast(transform.position, Vector3.down, out hit, rayDistance))
                 isGrounded = true;
         }

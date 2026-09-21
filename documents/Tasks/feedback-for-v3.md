@@ -26,4 +26,4 @@ Design:
 
 Goals:  Fix and adjust first version of V2 of Whisker based on 
 	- [ ] P2.Allow for more 3D details to mesh with environment.
-	- [ ] P3.Add in different themings and environment for each level for freshness and more engagement.
+	- [x] P3.Add in different themings and environment for each level for freshness and more engagement.
