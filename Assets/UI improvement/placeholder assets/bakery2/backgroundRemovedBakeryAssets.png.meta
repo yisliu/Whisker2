@@ -716,6 +716,446 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_27
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 830
+        width: 214
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f25ab7932705461bb8468e574c5c012
+      internalID: 1429092634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_28
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 833
+        width: 221
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b16aa074034f4288a52ba220c5da7e1
+      internalID: -1065693759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_29
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 833
+        width: 240
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5993c55163c254525b5961f2b1012b8e
+      internalID: -695294867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_30
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 836
+        width: 214
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8038ec3e2c09415f826fdd647c144e6
+      internalID: -1125501469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_31
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 835
+        width: 228
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0137cc5436e459786d4f3803097491
+      internalID: -204596551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 833
+        width: 184
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec3713cc2ac94a6293ef6c70381dc5b
+      internalID: -251779121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_33
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 741
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827e9243dc0b74c8498766f58edc9c65
+      internalID: 1172761465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 742
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617b3768902f748128d6668d3369a4a5
+      internalID: -735917914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 747
+        width: 117
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dfa1098aeb34d308b3d9a53f37dd20
+      internalID: -78416823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_36
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 741
+        width: 99
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9b9c317bc3f4b82a008fd9c13ac461
+      internalID: 1767966781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_37
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 746
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323dc909738f7486b86d1d9cc2d2c45a
+      internalID: 1874824787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_38
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 744
+        width: 101
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5a7a649a32f411e9e826bed5acedb2
+      internalID: -1971640347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_39
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 746
+        width: 92
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bc3653cf86a47b5b61119d7462d96a
+      internalID: -1548058471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_40
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 742
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcb85e966e774a18aca5b20d68a268f
+      internalID: -1664206648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_41
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 746
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338a86c36f47b46f0a54905c10ac22fa
+      internalID: 2114744168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_42
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 747
+        width: 108
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4a31701ce7442bd967ed2422fd0b65
+      internalID: -1588032881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_43
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 741
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2616503914e4b76a27e76946f09719
+      internalID: 573734664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_44
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 742
+        width: 95
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8bc3687ffbd4ec1a148d59297a50d0
+      internalID: -1835877966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_45
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 744
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dead0b11a096046eda3f99849f2e935c
+      internalID: -989178629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundRemovedBakeryAssets_46
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 744
+        width: 101
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db95b44f83be44958133e9eecdfe2e6
+      internalID: -197570726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -750,8 +1190,28 @@ TextureImporter:
       backgroundRemovedBakeryAssets_24: -49584015
       backgroundRemovedBakeryAssets_25: -1036874656
       backgroundRemovedBakeryAssets_26: 1193781845
+      backgroundRemovedBakeryAssets_27: 1429092634
+      backgroundRemovedBakeryAssets_28: -1065693759
+      backgroundRemovedBakeryAssets_29: -695294867
       backgroundRemovedBakeryAssets_3: -1292485159
+      backgroundRemovedBakeryAssets_30: -1125501469
+      backgroundRemovedBakeryAssets_31: -204596551
+      backgroundRemovedBakeryAssets_32: -251779121
+      backgroundRemovedBakeryAssets_33: 1172761465
+      backgroundRemovedBakeryAssets_34: -735917914
+      backgroundRemovedBakeryAssets_35: -78416823
+      backgroundRemovedBakeryAssets_36: 1767966781
+      backgroundRemovedBakeryAssets_37: 1874824787
+      backgroundRemovedBakeryAssets_38: -1971640347
+      backgroundRemovedBakeryAssets_39: -1548058471
       backgroundRemovedBakeryAssets_4: 1346434768
+      backgroundRemovedBakeryAssets_40: -1664206648
+      backgroundRemovedBakeryAssets_41: 2114744168
+      backgroundRemovedBakeryAssets_42: -1588032881
+      backgroundRemovedBakeryAssets_43: 573734664
+      backgroundRemovedBakeryAssets_44: -1835877966
+      backgroundRemovedBakeryAssets_45: -989178629
+      backgroundRemovedBakeryAssets_46: -197570726
       backgroundRemovedBakeryAssets_5: 429042628
       backgroundRemovedBakeryAssets_6: 1066723471
       backgroundRemovedBakeryAssets_7: -387945154
