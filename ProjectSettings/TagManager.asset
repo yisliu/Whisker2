@@ -76,6 +76,13 @@ TagManager:
   - eggs
   - creamCheese
   - lemonBakery
+  - cheeseCake
+  - stawberryShortcake
+  - matchaSwissRoll
+  - cakePops
+  - strawberryJellyCake
+  - mouseCake
+  - blackForest
   layers:
   - Default
   - TransparentFX
