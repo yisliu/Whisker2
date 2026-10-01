@@ -63,6 +63,26 @@ TagManager:
   - mintCoffee
   - gingerTea
   - milkCoffee
+  - cocoaPowder
+  - oneCherry
+  - cream
+  - chocolateBar
+  - strawberryJelly
+  - gelatin
+  - chocolateSyrup
+  - sprinkles
+  - matchaPowder
+  - redBeans
+  - eggs
+  - creamCheese
+  - lemonBakery
+  - cheeseCake
+  - stawberryShortcake
+  - matchaSwissRoll
+  - cakePops
+  - strawberryJellyCake
+  - mouseCake
+  - blackForest
   layers:
   - Default
   - TransparentFX
